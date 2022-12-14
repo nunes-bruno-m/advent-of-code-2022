@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Input.txt" />
+    <None Remove="InputExample.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Day13\Input.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Day13\InputExample.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DayEight\DayEight.csproj" />
+    <ProjectReference Include="..\DayEleven\DayEleven.csproj" />
+    <ProjectReference Include="..\DayFive\DayFive.csproj" />
+    <ProjectReference Include="..\DayFour\DayFour.csproj" />
+    <ProjectReference Include="..\DayNine\DayNine.csproj" />
+    <ProjectReference Include="..\DayOne.First\DayOne.csproj" />
+    <ProjectReference Include="..\Days.Shared\Days.Shared.csproj" />
+    <ProjectReference Include="..\DaySeven\DaySeven.csproj" />
+    <ProjectReference Include="..\DaySix\DaySix.csproj" />
+    <ProjectReference Include="..\DayTen\DayTen.csproj" />
+    <ProjectReference Include="..\DayThree\DayThree.csproj" />
+    <ProjectReference Include="..\DayTwo\DayTwo.csproj" />
+  </ItemGroup>
+
+</Project>
